@@ -19,7 +19,7 @@
 		margin: 0 auto;
 	}
 	#top-con{
-		width:1263px;
+		width:1200px;
 		height:90px;
 		margin: 0 auto;
 		
@@ -46,12 +46,12 @@
 	}
 /*dhl*/
 	#dhl{
-		width:1263px;
+		width:1200px;
 		height: 30px;
 		margin: 0 auto;
 	}
 	#dhl-con{
-		width:1263px;
+		width:1200px;
 		height: 30px;
 		line-height: 30px;
 		background: aquamarine;
@@ -82,7 +82,7 @@
 	}
 /*header*/
 	#header{
-		width: 1263px;
+		width: 1200px;
 		height: 50px;
 	/*	line-height: 1.5px;或者给header-con 一个高度*/
 		padding: 10px 0;
@@ -90,7 +90,7 @@
 		margin: 0 auto;
 	}
 	#header-con{
-		width:1263px;
+		width:1200px;
 		height: 50px;
 		background:white;
 	}
@@ -164,24 +164,51 @@
     	/*background-position: 0 -25px;*/	
 	}
 /*lunbo*/
-	#lbt{
+	#naver{
 		margin: 0 auto;
 	}
-	#lbt-con{
-		width: 100%;
+	#layout{
+		width:1200px;
 		height: 450px;
 		position: relative;
+		margin: 0 auto;
+	}	
+	#cate{
+		width: 240px;
+		height:42px;
+		background: coral;
+		z-index: 410;
+		position: absolute;
+		left:0;
+		top:0;
 	}
-	.lb{
-		width: 1263px;
+	.slide{
+		height:450px;
+		background: cadetblue;
+		position: relative;
+	}
+	.slide li{
+		height: 75px;
+	}
+	#layout .dt{
+		width:1200px;
 		height: 450px;
 	}
-	#lbt-con ul li{
+	#layout .dt li{
 		width: 100%;
 		height: 450px;
 		position: absolute;
 	}
-	#lbt ol{
+	.lb{
+		width: 1200px;
+		height: 450px;
+	}
+	.lb-con{
+		width: 1200px;
+		height: 450px;
+		position: absolute;
+	}
+	.lb ol{
 		width:300px;
 		height: 10px;
 		position: absolute;
@@ -190,7 +217,7 @@
 		margin-left:-85px ;
 		text-align: center;
 	}
-	#lbt-con ol li{
+	.lb ol li{
 		float: left;
 		margin-left: 10px;
 		width:10px;
@@ -200,17 +227,16 @@
 		border:1px solid #FFF;
 		background: chartreuse;
 	}
-	#slide{
-		width: 240px;
-		height:450px;
-		background: coral;
-		position: absolute;
-		left:0;
-		top:0;
+	.bl{
+		display: block;
 	}
-	.slide-con li{
-			width: 240px;
-			height: 75px;
-			display: block;
-			/*float: left;*/
+	#cate #ty{
+		padding:10px 16px;
+		height:55px;
+		position: relative;
 	}
+	 #ty a{
+	 	margin-right:8px ;
+	 	font-size: 14px;
+	 	cursor: pointer;
+	 }

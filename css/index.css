@@ -2,6 +2,9 @@
 		margin:0;
 		padding:0;
 	}
+	img{
+		border:0;display: block;}
+	input{outline: none;}
 	a,u{
 		text-decoration:none;
 	}
@@ -235,8 +238,155 @@
 		height:55px;
 		position: relative;
 	}
-	 #ty a{
+	#ty a{
 	 	margin-right:8px ;
 	 	font-size: 14px;
 	 	cursor: pointer;
 	 }
+	#ty i{
+		display: block;
+		width:7px;
+		height:13px;
+		margin-top:3px ;
+		position: absolute;
+		right:10px;
+		background:url(../img/icon-common.png);
+		background-position:-9px -214px ;
+		top:50%;
+	} 
+	#cebian{
+		position: absolute;
+		top:0;
+		left: 240px;
+		width:648px;
+		height: 448px;
+		/*display: none;*/
+		border-top: 1px solid #eaeaea;
+    	border-bottom: 1px solid #eaeaea;
+    	/*background: #fff;*/
+	}
+	#cebian .top{
+		width:580px;
+		height: 30px;
+		line-height:30px;
+		padding:20px 28px 20px 40px;
+		/*background: pink;*/
+	}
+	#cebian .top a{
+		display: block;
+		width:580px;
+		height:30px;
+		line-height: 30px;
+		font-size: 14px;
+		color: #ca151d;
+		cursor:pointer;	
+	}
+	#cebian .body{
+		width:580px;
+		padding:36px 28px 0 40px ;
+		border-top:1px slid #eaeaea;
+/*		background:blueviolet;*/
+	}
+	#cebian .bottom{
+		width:648px;
+		height:236px;
+		border-top:1px slid #eaeaea;
+		position: absolute;
+		bottom:0;
+		left: 0;
+		/*background: burlywood;*/
+	}
+	.body li{
+		float: left;
+	}
+	.lm a{
+		display: block;
+		padding-right: 30px;
+		font-size: 14px;
+		color:#3a3a3a;
+		cursor: pointer;
+	}
+/*home
+	#home-con .ls{
+		margin:0 auto;
+		width:1200px;
+		height: 97px;
+		border:1px solid #eaeaea;
+		/*text-align: center;
+	}
+	.ls-1{
+		margin: 13px 0;
+	}
+	#one{
+		position: absolute;
+		padding:0 18px 7px 22px;
+		/*color:#666;
+		background:pink;
+	}
+	#one .imgs{
+		margin:6px 0 0 0;
+		float: left;
+	}
+	.he{
+		padding-left: 20px!important;
+	}
+	.s{
+		text-align: left;
+		margin-top:8px ;
+		padding: 0 18px 0 10px;
+		line-height: 1.3;
+	}
+	.x{
+		margin-top:6px ;
+	}
+	.x a{
+		background: #fff;
+		color:#ca141d;
+		margin-right: 10px;
+	}*/
+#home-con .ls{
+	margin: 0 auto;
+	width: 1200px;
+	height: 97px;
+	border:1px solid #eaeaea;
+	border-top:#DEB887 ;
+}
+.ls-1{
+	width:288px;
+	height:72px;
+	background: pink;
+	/*position: absolute;*/
+}
+.imgs{
+	width: 59px;
+	height: 59px;
+	margin:6px 0 0 0;
+	float: left;
+	/*.x浮动不上去是因为img没给浮动!!!*/
+}
+.imgs img{
+	width:100%;
+}
+.ls-1 .he{
+	float:left ;
+}
+.s{
+	width:168px;
+	font-size: 12px;
+	color: #a4a4a4;
+}
+.s a{
+	color:#3A3A3A;
+	cursor: pointer;
+}
+.x a{
+	display: inline-block;
+	width:58px;
+	height:18px;
+	line-height: 18px;
+	font-size: 12px;
+	color:#ca141d;
+	border:1px solid #ca141d;
+	text-align: center;
+	cursor: pointer;
+}

@@ -6,7 +6,10 @@
 	</head>
 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/sport6.js"></script>
 	<script src="js/js.js"></script>
+	<!--这里要先引jQuery文件，样式一加载完毕，立刻就加载js,js内引用了jQuery，若是后引jQuery，会显示$未定义-->
 	<body>
 	<body style="overflow-x: hidden; overflow-y: auto;" >
 <!--top-->	
@@ -23,7 +26,7 @@
 		<div id="dhl-con">			
 			<div id="L">
 				<ul class="left">
-					<li><a href="http//www.vmall.com">首页</a></li>
+					<li><a>首页</a></li>
 					<li><a>华为官网</a></li>
 					<li><a>荣耀官网</a></li>
 					<li><a>花粉俱乐部</a></li>
@@ -82,7 +85,7 @@
 		<div id="layout">
 			<div id="cate">
 				<ul class="slide">
-					<li>
+					<li class="cb">
 						<div id="ty">
 							<a class="bl"><span>手机</span></a>
 							<a><span>荣耀 </span></a>
@@ -98,74 +101,354 @@
 								</div>
 								
 								<ul class="body">
-									<!--<li class="lm"><a>荣耀</a></li>
+									<li class="lm"><a>荣耀</a></li>
 									<li class="lm"><a>HUAWEI P系列</a></li>
 									<li class="lm"><a>荣耀畅玩系列</a></li>
 									<li class="lm"><a>HUAWEI Mate系列</a></li>
 									<li class="lm"><a>HUAWEI nova系列</a></li>
 									<li class="lm"><a>HUAWEI 麦芒系列</a></li>
 									<li class="lm"><a>华为畅享系列</a></li>
-									<li class="lm"><a>移动4G+专区</a></li>-->
+									<li class="lm"><a>移动4G+专区</a></li>
+									<span class="clear"></span>
 								</ul>
 								
 								<div class="bottom">
-									
+									<ul>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d1.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d2.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d3.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d2.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					<li class="cb">
+						<div id="ty">
+							<a class="bl"><span>手机</span></a>
+							<a><span>荣耀 </span></a>
+							<a><span>HUAWEI P系列</span></a>		
+							<i></i>
+						</div>
+						<div id="cebian">
+								<div class="top">
+									<a href="">
+										<span class="f1">浏览电脑频道</span>
+										<span class="next"> > </span>
+									</a>
+								</div>
+								
+								<ul class="body">
+									<li class="lm"><a>荣耀</a></li>
+									<li class="lm"><a>HUAWEI P系列</a></li>
+									<li class="lm"><a>荣耀畅玩系列</a></li>
+									<li class="lm"><a>HUAWEI Mate系列</a></li>
+									<li class="lm"><a>HUAWEI nova系列</a></li>
+									<li class="lm"><a>HUAWEI 麦芒系列</a></li>
+									<li class="lm"><a>华为畅享系列</a></li>
+									<li class="lm"><a>移动4G+专区</a></li>
+									<span class="clear"></span>
+								</ul>
+								
+								<div class="bottom">
+									<ul>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d2.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d2.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d1.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d3.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+									</ul>
 								</div>
 						</div>
 					</li>
-					<li>
+					<li class="cb">
 						<div id="ty">
-							<a class="bl"><span>笔记本 & 平板</span></a>
-							<a><span>平板电脑</span></a>
-							<a><span笔记本电脑></span></a>	
-							<i></i>	
-					    </div>
-					    <div id="cebian">
-								
-						</div>
-					</li>
-					<li>
-						<div id="ty">
-							<a class="bl"><span>智能穿戴</span></a>
-							<a><span>手环</span></a>
-							<a><span>手表</span></a>
-							<a><span>VR</span></a>
-							<i></i>							
-						</div>
-						<div id="cebian">		
-						</div>
-					</li>
-					<li>
-						<div id="ty">
-							<a class="bl"><span>智能家居</span></a>
-							<a><span>路由器 </span></a>
-							<a><span>电视盒子</span></a>
-							<a><span>生态产品</span></a>
-							<i></i>							
-						</div>
-						<div id="cebian">								
-						</div>
-					</li>
-					<li>
-						<div id="ty">
-							<a class="bl"><span>通用配件</span></a>
-							<a><span>移动电源</span></a>
-							<a><span>耳机</span></a>
-							<a><span>音箱</span></a>
-							<i></i>							
-						</div>
-						<div id="cebian">							
-						</div>
-					</li>
-					<li>
-						<div id="ty">
-							<a class="bl"><span>专属配件</span></a>
-							<a><span>保护壳</span></a>
-							<a><span>保护套</span></a>
-							<a><span>贴膜</span></a>
-							<i></i>							
+							<a class="bl"><span>手机</span></a>
+							<a><span>荣耀 </span></a>
+							<a><span>HUAWEI P系列</span></a>		
+							<i></i>
 						</div>
 						<div id="cebian">
+								<div class="top">
+									<a href="">
+										<span class="f1">首发产品频道</span>
+										<span class="next"> > </span>
+									</a>
+								</div>
+								
+								<ul class="body">
+									<li class="lm"><a>荣耀</a></li>
+									<li class="lm"><a>HUAWEI P系列</a></li>
+									<li class="lm"><a>荣耀畅玩系列</a></li>
+									<li class="lm"><a>HUAWEI Mate系列</a></li>
+									<li class="lm"><a>HUAWEI nova系列</a></li>
+									<li class="lm"><a>HUAWEI 麦芒系列</a></li>
+									<li class="lm"><a>华为畅享系列</a></li>
+									<li class="lm"><a>移动4G+专区</a></li>
+									<span class="clear"></span>
+								</ul>
+								
+								<div class="bottom">
+									<ul>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d3.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d2.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d3.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d1.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+									</ul>
+								</div>
+						</div>
+					</li>
+					<li class="cb">
+						<div id="ty">
+							<a class="bl"><span>手机</span></a>
+							<a><span>荣耀 </span></a>
+							<a><span>HUAWEI P系列</span></a>		
+							<i></i>
+						</div>
+						<div id="cebian">
+								<div class="top">
+									<a href="">
+										<span class="f1">浏览手机频道</span>
+										<span class="next"> > </span>
+									</a>
+								</div>
+								
+								<ul class="body">
+									<li class="lm"><a>荣耀</a></li>
+									<li class="lm"><a>HUAWEI P系列</a></li>
+									<li class="lm"><a>荣耀畅玩系列</a></li>
+									<li class="lm"><a>HUAWEI Mate系列</a></li>
+									<li class="lm"><a>HUAWEI nova系列</a></li>
+									<li class="lm"><a>HUAWEI 麦芒系列</a></li>
+									<li class="lm"><a>华为畅享系列</a></li>
+									<li class="lm"><a>移动4G+专区</a></li>
+									<span class="clear"></span>
+								</ul>
+								
+								<div class="bottom">
+									<ul>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d1.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d3.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d2.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d1.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+									</ul>
+								</div>
+						</div>
+					</li>
+					<li class="cb">
+						<div id="ty">
+							<a class="bl"><span>手机</span></a>
+							<a><span>荣耀 </span></a>
+							<a><span>HUAWEI P系列</span></a>		
+							<i></i>
+						</div>
+						<div id="cebian">
+								<div class="top">
+									<a href="">
+										<span class="f1">浏览手机频道</span>
+										<span class="next"> > </span>
+									</a>
+								</div>
+								
+								<ul class="body">
+									<li class="lm"><a>荣耀</a></li>
+									<li class="lm"><a>HUAWEI P系列</a></li>
+									<li class="lm"><a>荣耀畅玩系列</a></li>
+									<li class="lm"><a>HUAWEI Mate系列</a></li>
+									<li class="lm"><a>HUAWEI nova系列</a></li>
+									<li class="lm"><a>HUAWEI 麦芒系列</a></li>
+									<li class="lm"><a>华为畅享系列</a></li>
+									<li class="lm"><a>移动4G+专区</a></li>
+									<span class="clear"></span>
+								</ul>
+								
+								<div class="bottom">
+									<ul>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d2.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d2.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d3.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d1.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+									</ul>
+								</div>
+						</div>
+					</li>
+					<li class="cb">
+						<div id="ty">
+							<a class="bl"><span>手机</span></a>
+							<a><span>荣耀 </span></a>
+							<a><span>HUAWEI P系列</span></a>		
+							<i></i>
+						</div>
+						<div id="cebian">
+								<div class="top">
+									<a href="">
+										<span class="f1">浏览手机频道</span>
+										<span class="next"> > </span>
+									</a>
+								</div>
+								
+								<ul class="body">
+									<li class="lm"><a>荣耀</a></li>
+									<li class="lm"><a>HUAWEI P系列</a></li>
+									<li class="lm"><a>荣耀畅玩系列</a></li>
+									<li class="lm"><a>HUAWEI Mate系列</a></li>
+									<li class="lm"><a>HUAWEI nova系列</a></li>
+									<li class="lm"><a>HUAWEI 麦芒系列</a></li>
+									<li class="lm"><a>华为畅享系列</a></li>
+									<li class="lm"><a>移动4G+专区</a></li>
+									<span class="clear"></span>
+								</ul>
+								
+								<div class="bottom">
+									<ul>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d3.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d2.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d3.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+										<li>
+											<a>
+												<p class="bo1"><img src="img/d1.jpg"></p>
+												<p class="bo2">HUAWEI Mate 10</p>
+												<p class="bo3">¥1699</p>
+											</a>
+										</li>
+									</ul>
+								</div>
 						</div>
 					</li>
 				</ul>
@@ -174,19 +457,18 @@
 			<div class="lb">
 				<div class="lb-con">
 				<ul class="dt">
-					<li style="background: url(img/datu1.jpg) no-repeat 50% 
-0px;"><a></a></li>
-					<li style="background: url(img/datu2.jpg) no-repeat 50% 0px;"><a></a></li>
-					<li style="background: url(img/datu3.jpg) no-repeat 50% 0px;"><a></a></li>
-					<li style="background: url(img/datu4.jpg) no-repeat 50% 0px;"><a></a></li>
-					<li style="background: url(img/datu3.jpg) no-repeat 50% 0px;"><a></a></li>
-					<li style="background: url(img/datu2.jpg) no-repeat 50% 0px;"><a></a></li>
-					<li style="background: url(img/datu1.jpg) no-repeat 50% 0px;"><a></a></li>
+					<li style="background: url(img/datu1.jpg) no-repeat 50% 0;"><div><a> </a></div></li>
+					<li style="background: url(img/datu2.jpg) no-repeat 50% 0;"><div><a> </a></div></li>
+					<li style="background: url(img/datu3.jpg) no-repeat 50% 0;"><div><a> </a></div></li>
+					<li style="background: url(img/datu4.jpg) no-repeat 50% 0;"><div><a> </a></div></li>
+					<li style="background: url(img/datu3.jpg) no-repeat 50% 0;"><div><a> </a></div></li>
+					<li style="background: url(img/datu2.jpg) no-repeat 50% 0;"><div><a> </a></div></li>
+					
+					
 				</ul>	
-			</div>
-				<ol>
-					<li></li>
-					<li></li>
+			
+				<ol class="ool">
+					<li class="acc"></li>
 					<li></li>
 					<li></li>
 					<li></li>
@@ -196,6 +478,7 @@
 			</div>
 		</div>
 	</div>
+</div>
 <!--home-->
 		<div id="home-con">
 			<div class="ls">
@@ -268,16 +551,13 @@
 				
 				<ul class="lss ls-3">
 					<div class="shang">
-						<div class="sz">
-							公告
-						</div>	
+						<div class="sz">公告</div>	
 						<div class="sy">
 							<ul class="gd">
 								<li><a>荣耀车载充电器 评价赢好礼 活动中奖名单公布</a></li>
 								<li><a>荣耀年货节，全场最高省1000 ，爆款机型整点购机送新年大礼包</a></li>
 								<li><a>荣耀年货节，全场最高省1000 ，爆款机型整点购机送新年大礼包</a></li>
 								<li><a>华为商城APP新版上线，晒好评、提建议赢大礼！</a></li>
-								
 							</ul>	
 						</div>
 					</div>
@@ -287,7 +567,7 @@
 								<span>
 									<img class="jl1" src="img/jlt.png"/>
 								</span>
-									优购码
+								优购码
 							</a>
 						</li>
 						<li>
@@ -295,7 +575,7 @@
 								<span>
 									<img class="jl2" src="img/jlt.png"/>
 								</span>
-									实名认证
+								实名认证
 							</a>
 						</li>
 						<li>
@@ -303,7 +583,7 @@
 								<span>
 									<img class="jl3" src="img/jlt.png"/>
 								</span>
-									手机充值
+								手机充值
 							</a>
 						</li>
 				</ul>
@@ -335,7 +615,7 @@
 				<ul>
 					<li>	
 						<a>
-							<img class="zub" src="img/n5.jpg"/>
+							<img class="zub" src="img/n5.jpg/">
 						</a>
 					</li>
 				</ul>
@@ -488,14 +768,59 @@
 			<div class="lun-hz">
 				<ul class="lun-ul">
 					<li><a><img src="img/b3.jpg"/></a></li>
-					<li><a><img src="img/b4.jpg"/></a></li>
-					<li><a><img src="img/b5.jpg"/></a></li>
-					<li><a><img src="img/b6.jpg"/></a></li>
-					<li><a><img src="img/b4.jpg"/></a></li>
-					<li><a><img src="img/b5.jpg"/></a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	</body>
+<!--shouji-->
+	<div id="shou">
+		<div id="shh shou-con">
+			<div class="zong">
+			<!--上-->
+				<div class="zs">
+					<h2>笔记本电脑</h2>
+					<ul>
+						<!--<li><a>荣耀</a></li>
+						<li><a>HUAWEI P系列</a></li>
+						<li><a>荣耀畅玩系列</a></li>
+						<li><a>荣耀</a></li>
+						<li><a>HUAWEI P系列</a></li>
+						<li><a>荣耀畅玩系列</a></li>
+						<li><a>荣耀</a></li>
+						<li><a>HUAWEI P系列</a></li>-->
+		
+					</ul>
+					<div class="zss">
+						
+					</div>
+				</div>
+				<!--下-->
+				<div class="zx">
+				
+				</div>
+			</div>
+		</div>
+		
+		<div id="shh shou-con2">
+			
+		</div>
+		<div id="shh shou-con3">
+			
+		</div>
+		
+		<div id="shh shou-con4">
+			
+		</div>
+		<div id="shh shou-con5">
+			
+		</div>
+		
+		<div id="shh shou-con6">
+			
+		</div>
+		<div id="shh shou-con7">
+			
+		</div>
+	</div>
 </html>

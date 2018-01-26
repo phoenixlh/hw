@@ -54,25 +54,30 @@
 		height: 30px;
 		line-height: 30px;
 		margin: 0 auto;
-		background: aquamarine;
+		/*background: aquamarine;*/
 	}
 	#dhl-con li{
 		float: left;		
 	}
 	#L{
 		float: left;
+		position: relative;
 	}
 	#R{
 		float: right;
+		position: relative;
 	}
 	#L li:first-child{
 			padding-left: 0;
 	}
-	#L li a{
+	#dhl-con a{
 		font:12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
 		cursor: pointer;
 		border-right: 1px solid #e4e4e4;
 		padding:0 8px;
+	}
+	#dhl-con a:hover{
+		color: red;
 	}
 	#L .last{
 		border-right:0;
@@ -144,7 +149,7 @@
 	.search-bar-form .txt{
 		background: #fff;
 		border: 0;
-		/*	color: #3a3a3a;*/
+		/*color: #3a3a3a;*/
 		width: 299px;
 		padding-left: 11px;
 		height: 27px;
@@ -175,18 +180,20 @@
 	#cate{
 		width: 240px;
 		height:42px;
-		background: coral;
 		z-index: 410;
 		position: absolute;
 		left:0;
 		top:0;
 	}
+	#cate a{
+		cursor:pointer;
+	}
 	.slide{
 		height:450px;
-		background: cadetblue;
+		background-color: rgba(0,0,0,0.6);
 		position: relative;
 	}
-	.slide li{
+	.slide .cb{
 		height: 75px;
 	}
 	#layout .dt{
@@ -207,6 +214,17 @@
 		height: 450px;
 		position: absolute;
 	}
+	.lb-con a{
+		width:100%;
+		height: 450px;
+		display: block;
+		cursor: pointer;
+	}
+	.lb-con img{
+		position: absolute;
+		left:50;
+		top:0;
+	}
 	.lb ol{
 		width:300px;
 		height: 10px;
@@ -224,8 +242,11 @@
 		line-height: 10px;
 		border-radius: 50%;
 		border:1px solid #FFF;
-		background: chartreuse;
 	}
+	.acc{
+		background: red;
+	}
+	/*这里要注意权重的问题，直接写成.acc*/
 	.bl{
 		display: block;
 	}
@@ -234,10 +255,17 @@
 		height:55px;
 		position: relative;
 	}
-	#ty a{
+	.cb .active{
+		background: gray;
+	}
+	#ty .a{
 	 	margin-right:8px ;
 	 	font-size: 14px;
+	 	color: gray;
 	 	cursor: pointer;
+	 }
+	 #ty .active{
+	 	color: white;
 	 }
 	#ty i{
 		display: block;
@@ -256,16 +284,20 @@
 		left: 240px;
 		width:648px;
 		height: 448px;
-		/*display: none;*/
-		/*border-top: 1px solid #eaeaea;*/
-    	/*border-bottom: 1px solid #eaeaea;*/
-    	/*background: #fff;*/
+		display: none;
+		border-top: 1px solid #eaeaea;
+    	border-bottom: 1px solid #eaeaea;
+    	background: #fff;
+	}
+	#cebian .none{
+		display:none;
 	}
 	#cebian .top{
 		width:580px;
 		height: 30px;
 		line-height:30px;
 		padding:20px 28px 20px 40px;
+	/*	background: palevioletred;*/
 	}
 	#cebian .top a{
 		display: block;
@@ -276,10 +308,28 @@
 		color: #ca151d;
 		cursor:pointer;	
 	}
+	#cebian .top .next{
+		float: right;
+	}
 	#cebian .body{
 		width:580px;
 		padding:36px 28px 0 40px ;
-		/*border-top:1px slid #eaeaea;*/
+		border-top:1px slid #eaeaea;
+		/*background: burlywood;*/
+	}
+	#cebian .body .lm{
+		float: left;/
+		vertical-align: top;
+		/*position: relative;*/
+	}
+	.lm a{
+		display: block;
+		padding-right: 30px;
+		font-size: 14px;
+		color:#3a3a3a;
+		cursor: pointer;
+		padding-bottom:38px ;
+		line-height:1;
 	}
 	#cebian .bottom{
 		width:648px;
@@ -288,16 +338,46 @@
 		position: absolute;
 		bottom:0;
 		left: 0;
+		/*background: dodgerblue;*/
 	}
-	.body li{
+	#cebian .bottom li{
 		float: left;
+		width: 25%;
+		height: 236px;
 	}
-	.lm a{
-		display: block;
-		padding-right: 30px;
-		font-size: 14px;
-		color:#3a3a3a;
+	#cebian .bottom li a{
+		display: inline-block;
+		/*a:inline-block*/
+		width: 100%;
+		height: 100%;
+		text-align: center;
 		cursor: pointer;
+	}
+	#cebian .bottom .bo1{
+		width:118px;
+		height: 118px;
+		margin: 26px auto 0;
+	}
+	#cebian .bottom .bo1 img{
+		/*width:100%;
+		height: 100%;*/
+		width:118px;
+		height: 118px;
+	}
+	#cebian .bottom .bo2{
+		width: 129px;
+		height: 42px;
+		line-height: 1.1;
+		font-size: 14px;
+		font-weight: 400;
+		color: #3A3A3A;
+		margin: 16px 20px 2px;
+		padding: 0 16px 0 16px;
+	}
+	#cebian .bottom .bo3{
+		font-size: 14px;
+		font-weight: 400;
+		  color: #cc0e11;
 	}
 /*home*/
 	#home-con .ls{
@@ -740,3 +820,48 @@ margin: 0 auto;
 	width:1200px;
 	height: 120px;
 }
+#lun-con{
+	margin: 0 auto;
+	width:1200px;
+	height: 120px;
+}
+
+/*shouji*/
+#shou{
+/*	width:100%;*/
+	background: #f5f5f5;
+	/*position: relative;*/
+}
+/*#shh{
+	width:1200px;
+	margin:0 auto;
+}
+/*#shh .zs{
+	margin:22px 0 12px;
+	line-height: 36px;
+	/*position: relative;*/
+}
+/*#shh h2{
+	color:#333;
+	font-size: 24px;
+	float: left;
+}
+#shh ul{
+	float: left;
+	margin-left: 28px;
+	/*position: relative;*/
+}
+/*#shh .zss{
+	float: right;
+	text-align: center;
+}
+#shh ul li{
+	float: left;
+	font-size: 12px;
+}
+#shh ul li a{
+	font-size: 16px;
+	color: #a4a4a4;
+	margin:0 10px;
+	cursor: pointer;
+}*/

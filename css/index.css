@@ -609,6 +609,7 @@ margin: 0 auto;
 #hot-con{
 	width: 1200px;
 	margin: 0 auto;
+	background: #F5F5F5;
 }
 .tt{
 	color:#333333;
@@ -657,8 +658,8 @@ margin: 0 auto;
 	float: left;
 	position:relative;
 	margin:0 0 10px 10px;
-/*	background: burlywood;*/
-    background: #f5f5f5;
+	background: white;
+    
 }
 .yb li a{
 	display: inline-block;
@@ -820,48 +821,135 @@ margin: 0 auto;
 	width:1200px;
 	height: 120px;
 }
-#lun-con{
-	margin: 0 auto;
-	width:1200px;
-	height: 120px;
-}
 
 /*shouji*/
 #shou{
-/*	width:100%;*/
-	background: #f5f5f5;
-	/*position: relative;*/
+	display: block;
+	position: relative;
 }
-/*#shh{
+#shou-con{
 	width:1200px;
 	margin:0 auto;
+	background: white;
 }
-/*#shh .zs{
+#shou-con a{
+	cursor: pointer;
+}
+.zs{
 	margin:22px 0 12px;
 	line-height: 36px;
-	/*position: relative;*/
 }
-/*#shh h2{
+.zs h2{
+	display: block;
+	/*zheli*/
 	color:#333;
 	font-size: 24px;
+	font-weight: 400;
 	float: left;
 }
-#shh ul{
+.zs ul{
 	float: left;
 	margin-left: 28px;
 	/*position: relative;*/
 }
-/*#shh .zss{
-	float: right;
-	text-align: center;
-}
-#shh ul li{
+/*子元素li有浮动,ul出现高度塌陷,在ul后添加一个空的span标签,起类名为clear,并添加样式:
+上面已经写过
+.clear{
+	display: block;
+	clear:both;
+}*/
+.zs ul li{
 	float: left;
 	font-size: 12px;
+	background: #f5f5f5;
 }
-#shh ul li a{
+.zs ul li a{
+	display: inline-block;
 	font-size: 16px;
 	color: #a4a4a4;
 	margin:0 10px;
 	cursor: pointer;
-}*/
+	position: relative;
+	background: #f5f5f5;
+}
+.zs .zss{
+	float: right;
+}
+.zss a{
+	padding: 0 14px;
+	font-size: 18px;
+	color: #666;
+	cursor: pointer;
+	text-align: center;
+}
+.zx{
+	display: block;
+}
+.zx-con{
+	/*margin: -12px 0 0 -12px;*/
+	display: block;
+}
+.zx-con ul{
+	/*margin: -12px 0 0 -12px;*/
+	position: relative;
+	margin: 0 auto;
+} 
+.zx-con .diz{
+	width:291px;
+	height: 346;
+/*	margin: 12px 0 0 12px;*/
+	float: left;
+
+}
+.diz a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.zx-con .diz{
+	height: 346px;
+}
+.zx-con .diz img{
+	width:100%;
+	height: 100%;
+}
+.zx-con .xt p{
+	width: 160px;
+	height: 160px;
+	margin: 40px auto 0;
+}
+.zx-con .xt img{
+	width: 100%;
+	height: 100%;
+}
+.zx-con .xt{
+	width:291px;
+	height: 346;
+	text-align: center;
+/*	margin: 12px 0 0 12px;*/
+	float: left;
+}
+.zx-con .xt span{
+	display: block;
+}
+.sp01{
+	width: 259px;
+	height: 40px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.1;
+	padding-top: 26px;
+	margin: 17px 20px 2px;
+}
+.sp02{
+	font-size: 12px;
+	font-weight: 400;
+	color: #A4A4A4;
+	margin: 2px 20px 6px;
+}
+.sp03{
+	font-size: 14px;
+	font-weight: 400;
+	color: #cc0e11;
+	margin: 0 20px 20px;
+}

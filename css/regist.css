@@ -1,0 +1,152 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style: none;
+}
+input{
+	outline: none;
+}
+i,em{
+	font-style:normal;
+}
+body{
+	font: Arial, Helvetica, sans-serif;/*12px/1.5*/
+	background: whitesmoke;
+}
+#head{
+	background: #333;
+	height: 67px;
+}
+#head-con{
+	width: 960px;
+	margin: 0 auto;
+}
+.logo{
+	width:143px
+	position:static;
+	left:2px;
+	float: left;
+	margin-right: 20px;
+}
+.logo img{
+	margin: 12px 0 0 4px;
+}
+.name{
+	font-size: 20px;
+	font-family: "arial";
+	height: 67px;
+	line-height: 50px;
+	padding-top: 8px;
+}
+.name .b2{
+	font-size: 18px;
+	color: black;
+	margin-top:-1px;
+	float: left;
+	margin-left: 18px;
+}
+#main{
+	width:700px;
+	margin: 0 auto;
+}
+#main form{
+	padding-top:40px ;
+	width:700px;
+	height: 600px;
+	border: 1px solid black;
+	margin: 10px auto ;
+	background: white;
+}
+form i{
+	font-size: 25px;
+	padding-left:40% ;
+	color: cadetblue;
+	margin-bottom:40px;
+}
+#main span{
+	font-size: 20px;
+	padding-left: 40px;
+	margin-left: 20px;
+}
+#main .sss{
+	width:350px;
+	height:34px;
+	border-radius: 5px;
+}
+#main .he{
+	margin-bottom: 40px;
+}
+.ss1{
+	margin-top:30px;
+}
+.ss1,.ss2,.ss5{
+	margin-left:40px;
+}
+.ss3{
+	margin-left:36px;
+}
+.ss4{
+	margin-left:22px;
+}
+.reg{
+	width: 100px;
+	height: 30px;
+	margin: 20px 0 0 260px  ;
+}
+#main .error{
+	border: 1px solid crimson;
+	width: 20px;
+	height: 20px;
+	font-size: 14px;
+	margin-left:15px ;
+	display: none;
+}
+.yzm{
+	position: relative;
+}
+.yzm img{
+	position: absolute;
+	right: 180px;
+	top:1px;
+}
+
+.xian{
+	width: 100%;
+	border-top: 1px solid #ccc;
+	height: 1px;
+	margin-top:35px ;
+}
+.bott{
+	width: 100%;
+	margin:0 auto;
+}
+.bott-con{
+	width: 700px;
+	margin:30px 0 30px 0;
+	text-align: center;
+}
+.bott-con ul{
+	line-height: 24px;
+    margin: 0 auto;
+    font-size: 10px;
+    color: #999;
+}
+.bott-con li{
+	display: inline;
+	padding-left: 20px;
+}
+.bott-con li a{
+	font-size: 14px;
+	cursor: pointer;
+} 
+.bott-con li em{
+	margin-left: 14px;
+}
+.bott-con .footer{
+	line-height: 24px;
+	margin:0 auto;
+	font-size: 10px;
+	 color: #999;
+}

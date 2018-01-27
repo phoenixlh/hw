@@ -54,10 +54,19 @@
 		height: 30px;
 		line-height: 30px;
 		margin: 0 auto;
-		/*background: aquamarine;*/
 	}
 	#dhl-con li{
 		float: left;		
+	}
+	#dhl-con a{
+		font:12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+		cursor: pointer;
+		padding:0 6px;
+		color: #A4A4A4;
+		border-right: 1px solid #e4e4e4;
+	}
+	#dhl-con a:hover{
+		color: red;
 	}
 	#L{
 		float: left;
@@ -67,23 +76,23 @@
 		float: right;
 		position: relative;
 	}
-	#L li:first-child{
-			padding-left: 0;
+	#R li .gg{
+		border-right: 0;
 	}
-	#dhl-con a{
-		font:12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
-		cursor: pointer;
-		border-right: 1px solid #e4e4e4;
-		padding:0 8px;
+	#R .gwcc{
+		width:14px;
+		height: 14px;
+		overflow: hidden;
+		position: absolute;
+		left:155px;
+		top:9px;
 	}
-	#dhl-con a:hover{
-		color: red;
+	#R .gwc{
+		padding: 5px 0px 0 20px;
+		border-right:0;
 	}
 	#L .last{
 		border-right:0;
-	}
-	.icon-appwaimai{
-		padding:0 14px 0 14px;			
 	}
 /*header*/
 	#header{
@@ -826,11 +835,12 @@ margin: 0 auto;
 #shou{
 	display: block;
 	position: relative;
+	/*background: white;*/
 }
 #shou-con{
 	width:1200px;
 	margin:0 auto;
-	background: white;
+	background: #F5F5F5;
 }
 #shou-con a{
 	cursor: pointer;
@@ -850,7 +860,6 @@ margin: 0 auto;
 .zs ul{
 	float: left;
 	margin-left: 28px;
-	/*position: relative;*/
 }
 /*子元素li有浮动,ul出现高度塌陷,在ul后添加一个空的span标签,起类名为clear,并添加样式:
 上面已经写过
@@ -861,7 +870,7 @@ margin: 0 auto;
 .zs ul li{
 	float: left;
 	font-size: 12px;
-	background: #f5f5f5;
+	/*background: #f5f5f5;*/
 }
 .zs ul li a{
 	display: inline-block;
@@ -882,24 +891,35 @@ margin: 0 auto;
 	cursor: pointer;
 	text-align: center;
 }
+
 .zx{
 	display: block;
 }
 .zx-con{
-	/*margin: -12px 0 0 -12px;*/
+	margin-top: -12px;
+	margin-left:-12px ; 
 	display: block;
+	height: 346px;
 }
 .zx-con ul{
-	/*margin: -12px 0 0 -12px;*/
+	/*margin-top: 12px;
+	margin-left:12px ;
+	margin-top: -12px;
+	margin-left:-12px ;*/
+	display: block;
 	position: relative;
 	margin: 0 auto;
+	height: 346px;
+}
+.zx-con li{
+		margin-top: 12px;
+		margin-left:12px ;
+		background: white;
 } 
 .zx-con .diz{
 	width:291px;
 	height: 346;
-/*	margin: 12px 0 0 12px;*/
 	float: left;
-
 }
 .diz a{
 	display: inline-block;
@@ -909,7 +929,15 @@ margin: 0 auto;
 .zx-con .diz{
 	height: 346px;
 }
-.zx-con .diz img{
+.zx-con .xt{
+	width:291px;
+	height: 346px;
+	text-align: center;
+	/*margin: 12px 0 0 12px;*/
+	float: left;
+	position: relative;
+}
+.zx-con li img{
 	width:100%;
 	height: 100%;
 }
@@ -917,17 +945,6 @@ margin: 0 auto;
 	width: 160px;
 	height: 160px;
 	margin: 40px auto 0;
-}
-.zx-con .xt img{
-	width: 100%;
-	height: 100%;
-}
-.zx-con .xt{
-	width:291px;
-	height: 346;
-	text-align: center;
-/*	margin: 12px 0 0 12px;*/
-	float: left;
 }
 .zx-con .xt span{
 	display: block;

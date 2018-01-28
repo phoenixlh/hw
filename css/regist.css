@@ -63,7 +63,8 @@ form i{
 	font-size: 25px;
 	padding-left:40% ;
 	color: cadetblue;
-	margin-bottom:40px;
+	display: block;
+	margin-bottom:40px ;
 }
 #main span{
 	font-size: 20px;
@@ -77,9 +78,7 @@ form i{
 }
 #main .he{
 	margin-bottom: 40px;
-}
-.ss1{
-	margin-top:30px;
+	position: relative;
 }
 .ss1,.ss2,.ss5{
 	margin-left:40px;
@@ -97,20 +96,33 @@ form i{
 }
 #main .error{
 	border: 1px solid crimson;
-	width: 20px;
+	width:60px;
 	height: 20px;
 	font-size: 14px;
 	margin-left:15px ;
 	display: none;
+	text-align: center;
+	position: absolute;
+	right:10px;
+	top:10px;
 }
 .yzm{
 	position: relative;
 }
-.yzm img{
+.yz{
+	width:30px;
+	height: 32px;
+	border: 1px solid forestgreen;
+/*	text-align: center;*/
 	position: absolute;
 	right: 180px;
 	top:1px;
 }
+/*.yzm img{
+	position: absolute;
+	right: 180px;
+	top:1px;
+}*/
 
 .xian{
 	width: 100%;

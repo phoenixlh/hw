@@ -94,6 +94,8 @@ $(".ss4").blur(function(){
 $(".reg").click(function(){
 	if(!( flagPhone && flagName && flagPwd && flagQpwd )){
 		return false;
+	}else{
+		location.href = "success.html"
 	}
 })
 

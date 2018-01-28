@@ -90,9 +90,11 @@ form i{
 	margin-left:22px;
 }
 .reg{
-	width: 100px;
-	height: 30px;
-	margin: 20px 0 0 260px  ;
+	width: 340px;
+	height: 40px;
+	position: relative;
+	left: 170px;
+	top: -180px;
 }
 #main .error{
 	border: 1px solid crimson;

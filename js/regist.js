@@ -1,40 +1,5 @@
-//选项卡
 window.onload = function(){
-	$(".cb").each(function(){
-	
-	}).mouseenter(function(){
-		$(this).find("#ty").addClass("active")
-			   .end()
-			   .find("#cebian").show()
-	}).mouseleave(function(){
-		$(this).find("#ty").removeClass("active")
-		 	   .end()
-			   .find("#cebian").hide()
-	})
-	
-	
-	
-//大轮播图
-var index = 0 ;
-var timer = null;
-timer = setInterval(autoplay,2000);
-function autoplay(){
-	index++;
-	if(index == $(".ool li").size()){
-		index = 0;
-	}
-	$(".ool li").eq(index).addClass("acc")
-	                      .siblings()
-	                      .removeClass("acc")
-	$(".dt li").eq(index).fadeIn(2000)
-						 .siblings()
-						 .fadeOut(2000)
-}	
-
-
-
-//注册页面-正则
-var flagPhone = null;
+	var flagPhone = null;
 $(".ss1").blur(function(){
 	var str = $(this).val();
 	var reg = /^1(3|5|7|8|9)\d{9}$/;
@@ -47,6 +12,7 @@ $(".ss1").blur(function(){
 		flagPhone = true;
 	}
 })
+
 
 var flagName = null;
 $(".ss2").blur(function(){
@@ -93,19 +59,11 @@ $(".ss4").blur(function(){
 
 $(".reg").click(function(){
 	if(!( flagPhone && flagName && flagPwd && flagQpwd )){
-		return false;
+		alert("注册失败！请检查所填信息")
 	}
 else{
 		location.href = "suc.html";
 	}
 })
 
-//$(document).click(function(){
-//	location.href = "suc.html";
-//})
-
-}//window的大括号
-
-
-
-
+}

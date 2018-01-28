@@ -92,14 +92,17 @@ $(".ss4").blur(function(){
 })
 
 $(".reg").click(function(){
-	if(!( flagPhone && flagName && flagPwd && flagQpwd )){
-		return false;
-	}else{
-		location.href = "success.html"
-	}
+//	if(!( flagPhone && flagName && flagPwd && flagQpwd )){
+//		return false;
+//	}
+//else{
+//		location.href = "success.html";
+//	}
 })
 
-
+$(document).click(function(){
+	location.href="../suc.html"
+})
 }//window的大括号
 
 

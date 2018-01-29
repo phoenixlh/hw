@@ -1,0 +1,135 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	background-color: #EBEBEB;;
+}
+.head{
+	height: 67px;
+}
+.head-con{
+	width: 960px;
+	margin: 0 auto;
+}
+.logo{
+	width:143px
+	position:static;
+	left:2px;
+	float: left;
+	margin-right: 20px;
+}
+.logo img{
+	margin: 12px 0 0 4px;
+}
+.name{
+	font-size: 20px;
+	font-family: "arial";
+	height: 67px;
+	line-height: 50px;
+	padding-top: 8px;
+}
+.name .b2{
+	font-size: 18px;
+	color: white;
+	margin-top:4px;
+	float: left;
+	margin-left: 18px;
+}
+.bo{
+	width: 100%;
+	background-color: #081638;
+}
+.bo-con{
+	width: 1130px;
+	height: 590px;
+	margin: 0 auto;
+}
+
+
+.denglu{
+	width: 380px;
+	height: 530px;
+	float: right;
+	margin: 30px 0 30px 0;
+	background: white;
+}
+.shang{
+	width: 100%;
+	margin: 24px auto 40px;
+	text-align: center;
+}
+.denglu span{
+	display: inline-block;
+	width: 169px;
+	color: #333333;
+	font-size: 21px;
+	font-weight: 500;
+	font-family: "Microsoft YaHei" ! important;
+	text-align: center;
+    cursor: pointer;
+}
+.shang .z{
+	color:#B40707; ;
+}
+.shang .s{
+	border-left: 1px solid #cccccc;
+}
+.xia{
+	width: 328px;
+    margin: 0 auto;
+}
+.n1,.n2,.n3{
+	width: 328px;
+	height: 30px;
+	border: 0;
+	padding: 10px 0 10px 0;
+	border-bottom: 1px solid #FF8C00;
+	margin: 35px auto;
+}
+label{
+	position: relative;
+	top:35%;
+	font-size: 18px;	
+}
+.bt{
+	width: 250px;
+	height: 46px;
+	border: 0;
+	margin: 50px 0 0 37px;
+	
+}
+
+.foot{
+	width: 100%;
+	margin:0 auto;
+}
+.bott-con{
+	width: 700px;
+	margin:30px 0 30px 0;
+	text-align: center;
+}
+
+.bott-con ul{
+	line-height: 24px;
+    margin: 0 auto;
+    font-size: 10px;
+    color: #999;
+}
+.bott-con li{
+	display: inline;
+	padding-left: 20px;
+}
+.bott-con li a{
+	font-size: 14px;
+	cursor: pointer;
+} 
+.bott-con li em{
+	margin-left: 14px;
+}
+.bott-con .footer{
+	line-height: 24px;
+	margin:0 auto;
+	font-size: 10px;
+	 color: #999;
+}

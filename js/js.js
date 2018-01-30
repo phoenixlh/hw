@@ -1,3 +1,4 @@
+
 //选项卡
 window.onload = function(){
 	$(".cb").each(function(){
@@ -29,10 +30,37 @@ function autoplay(){
 	$(".dt li").eq(index).fadeIn(3000)
 						 .siblings()
 						 .fadeOut(3000)
-}	
+}
 
 
+var num = 0; 
+var timer = setInterval(auto,2000);
+function auto(){
+	num++;
+	if(num == 8){
+		num = 1;
+		$(".gd").css("top",0)
+	}
+	$(".gd").animate({"top":-48*num},500)
+}
 
+//点击轮播
+var flag = true;
+var mleft = $(this).siblings("ul").css("margin-left");
+$(".spl").click(function(){
+	if(flag){
+		$(this).siblings("ul").animate({"margin-left":-1200},1000)
+		if( mleft == 0 ){
+//			mleft = 0;
+			flag = false;
+		}
+	}
+})
+$(".spr").click(function(){
+	if(flag){
+		$(this).siblings("ul").animate({"margin-left":0},1000);		
+	}
+})
 
 
 }//window的大括号

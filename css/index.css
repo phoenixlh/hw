@@ -70,7 +70,6 @@
 	}
 	#L{
 		float: left;
-		/*position: relative;*/
 	}
 	#R{
 		float: right;
@@ -116,9 +115,6 @@
 	#header-con a{
 		cursor: pointer;
 	}
-	/*#header-con a:hover
-		color: red;
-	}*/
 	.img-logo{
 		float: left;
  	    margin-right: 40px;
@@ -148,26 +144,22 @@
 		float: right;
 	}
 	.search-bar{
-		/*background: coral;*/
 		margin-top: 14px;
    	}
 	.search-bar-form{
 		background: ;
    		width: 330px;
     	height: 27px;
-    	/*background:#FAEBD7;*/	
 	}
 	.search-bar,.search-bar-form{
 	    border-bottom: 1px solid #ddd;
     	width: 330px;
    		height: 27px;
-    	/*line-height: 1px;*/
     	position: relative;
 	}
 	.search-bar-form .txt{
 		background: #fff;
 		border: 0;
-		/*color: #3a3a3a;*/
 		width: 299px;
 		padding-left: 11px;
 		height: 27px;
@@ -183,7 +175,6 @@
     	position: absolute;
     	right:0px;
     	background: url(../img/fdj.jpg) no-repeat;
-    	/*background-position: 0 -25px;*/	
 	}
 /*lunbo*/
 	#naver{
@@ -262,7 +253,7 @@
 		border:1px solid #FFF;
 	}
 	.acc{
-		background: red;
+		background: white;
 	}
 	/*这里要注意权重的问题，直接写成.acc*/
 	.bl{
@@ -398,7 +389,6 @@
 		height: 97px;
 		border:1px solid #eaeaea;
 		border-top:0 ;
-		background: indianred;
 	}
 	#home-con .ls .lss{
 		float: left;
@@ -407,13 +397,11 @@
 	.ls-1{
 		width:288px;
 		height:72px;
-		background: pink;
 		margin: 13px 0;
 	}
 	.zzz{
 		padding:0 18px 7px 22px;
 		text-align: left;
-		
 	}
 	.imgs{
 		width: 59px;
@@ -453,14 +441,12 @@
 		text-align: center;
 		cursor: pointer;
 		margin-right:10px ;
-		/*background: #fff;*/
 	}
 	.ls-2{
 		width:602px;
 		height: 72px;
 		border-left: 1px solid #EAEAEA;
 		margin: 13px 0;
-		background: #A4A4A4;
 	}
 	.ls-2 li{
 		float: left;
@@ -468,15 +454,12 @@
 		width: 16.6666667%;;
 		text-align: center;
 		padding-top:8px ;
-		/*position: relative;*/
-		background: darkorange;
 	}
 	.ig{
 		width: 40px;
 		height: 40px;
 		overflow: hidden;
 		margin: auto auto;
-		/*position:absolute;*/
 	}
 	.ig1 {
 		background: url(../img/jlt.png) no-repeat 0 0;
@@ -503,8 +486,6 @@
 		line-height: 20px;
 		color:#3A3A3A;
 	}
-
-
 	.ls-3{
 		width:301px;
 		height:98px;
@@ -514,21 +495,38 @@
 	.shang{
 		height: 48px;
 		border-bottom:1px solid #EAEAEA;
+		position: relative;
 	}
 	.ls-3 .sz{
 		width:58px ;
 		height: 48px;
 		line-height: 48px;
 		float: left;
+		text-align: center;
+		position: relative;		
+	}
+	.sz a{
+		line-height: 48px;
+		color: red;
+	}
+	.sz span{
+		display: block;
+		width: 31px;
+	    height: 13px;
+	    position: relative;
+	    top: 17px;
+	    margin: 0 auto;
+	    background-position: -17px -214px;
 	}
 	.ls-3 .sy{
 		width:243px;
-		height:48pxpx;
+		height:48px;
 		text-align: left;
 		overflow: hidden;
+		position: relative;
 	}
 	.ls-3 .gd{
-		height: 240px;
+		position: absolute;
 	}
 	.gd li{
 		width:243px;
@@ -537,8 +535,7 @@
 		font-size: 14px;
 		overflow: hidden;
 		white-space: nowrap;
-		text-overflow: ellipsis;/*文本溢出三连用：white-space：nowrap；overflow:hidden;text-overfolw:hidden*/
-		display: none;
+		text-overflow: ellipsis;/*文本溢出三连用*/
 	}
 	.xia li{
 		height: 48px;
@@ -582,7 +579,6 @@
 }
 #tiao-con{
 	height: 12px;
-	background: #FF8C00;
 	margin: 0 auto;
 }
 /*duilian*/
@@ -633,12 +629,11 @@ margin: 0 auto;
 	color: #3a3a3a;
 	padding: 30px 0 15px 0;
 	line-height: 22px;
-	/*或者line-height:1*/	
 }
 .clear{
 	display: block;
 	clear: both;
-	}/*这里解决高度塌陷：ul*/
+	}
 .bb{
 	width: 1200px;
 	height:590px;
@@ -1003,6 +998,13 @@ margin: 0 auto;
 	border-top: 1px solid #EEEEEE;
 	font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif; 
 	background: #F0f0f0;
+	/*position: relative;*/
+}
+.ls1-con{
+	width:1200px;
+	margin: 0 auto;
+	padding: 46px 0 46px;
+	overflow: hidden;
 }
 
 #last1 ul{
@@ -1025,4 +1027,149 @@ margin: 0 auto;
 	line-height: 47px;
     margin-right: 16px;
     vertical-align: middle;
+}
+
+
+
+#last2{
+	width: 100%;
+	border-top: 1px solid #EEE;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    line-height: 1.5;
+    background: #f0f0f0;
+}
+.service{
+	margin: 0 auto;
+	width: 1200px;
+	border-top: 1px solid #e8e8e8;
+    padding: 26px 0 18px;
+    overflow: hidden;
+}
+.serleft{
+	width: 944px;
+    height: 164px;
+    float: left;
+    margin-top: 2px;
+}
+.serleft dl{
+	width: 16.66667%;
+	float: left;
+}
+dt{
+	font-size: 14px;
+    color: #3a3a3a;
+}
+dd{
+	font-size:12px;
+}
+dt .line{
+	width: 22px;
+	height: 2px;
+	background: #a8a8a8;
+    margin: 2px 0 12px 0!important;
+}
+.title{
+	font-size: 14px!important;
+    padding-bottom: 12px;
+    color: #3a3a3a;
+    display: block;
+    border-left: none;
+    padding-left: 0;
+    line-height: 1.5!important;
+    margin-bottom: 0!important;
+}
+dd ol{
+	display: block;
+}
+dd li{
+	width: 100%;
+	
+	line-height: 24px;
+}
+dd a{
+	color: #666;
+	cursor: pointer;
+}
+
+.serr{
+	width: 210px;
+    height: 164px;
+    margin-top: 2px;
+    padding-left: 40px;
+    float: left;
+}
+.s7{
+	float: left;
+}
+.s7 .title{
+	font-size: 24px!important;
+}
+
+.logo{
+	width: 79px;
+    height: 16px;
+    padding: 20px 38px 0 0;
+    float: left;
+}
+.logo img{
+	vertical-align: top;
+    width: 79px;
+    height: 16px;
+}
+#last3{
+	width: 100%;
+	background: #e6e6e6;
+	line-height: 20px;
+}
+.foo{
+	padding: 15px 0 50px;
+    width: 1200px;
+    margin: 0 auto;
+    color: #666;
+    line-height: 1.5;
+}
+.logo a{
+	display: block;
+    width: 100%;
+    height: 100%;
+}
+.area{
+	padding: 26px 0 34px;
+    width: 1200px;
+    margin: 0 auto;
+    color: #666;
+    line-height: 20px;
+    font-size: 12px!important;
+}
+.area .f5{
+	float: left;
+	display: block;
+	text-align: left;
+    color: #a4a4a4;
+    line-height: 20px;
+}
+.area a{
+	cursor: pointer;
+}
+.fr{
+    float: right;
+	padding: 15px 0 0;
+}
+.footer-warrant-img a{
+	display: block;
+    width: 70px;
+    margin-left: 4px;
+    height: 24px;
+    color: #a4a4a4;
+    float: left;
+    cursor: pointer;
+}
+.fr .f1{
+	vertical-align: top;
+    width: 70px;
+    height: 24px;
+}
+.fr img{
+	width: 70px;
+	height: 24px;
 }

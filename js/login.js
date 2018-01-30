@@ -23,8 +23,8 @@ window.onload = function(){
 //			}
 //		})
 $(".bt").click(function(){
-	console.log( $(".n1").val() );
-	
+//	console.log( $(".n1").val() );
+alert(1)	
 })
 		
 	

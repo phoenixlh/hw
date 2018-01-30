@@ -1,32 +1,32 @@
 {
 	"rexiao":{
-	"name":"华为",
-	"list":[
-		{
-			"id":"sh1",
-			"name":"荣耀v10",
-			"src":"n6.jpg",
-			"price":"2699"
-		},
-		{
-			"id":"sh2",
-			"name":"荣耀v11",
-			"src":"n7.jpg",
-			"price":"2699"
-		},
-		{
-			"id":"sh3",
-			"name":"荣耀v12",
-			"src":"n8.jpg",
-			"price":"1199"
-		},
-		{
-			"id":"sh4",
-			"name":"荣耀v13",
-			"src":"n9.jpg",
-			"price":"4499"
+		"name":"华为",
+		"list":[
+			{
+				"id":"sh1",
+				"name":"荣耀v10",
+				"src":"n6.jpg",
+				"price":"2699"
+			},
+			{
+				"id":"sh2",
+				"name":"荣耀v11",
+				"src":"n7.jpg",
+				"price":"2699"
+			},
+			{
+				"id":"sh3",
+				"name":"荣耀v12",
+				"src":"n8.jpg",
+				"price":"1199"
+			},
+			{
+				"id":"sh4",
+				"name":"荣耀v13",
+				"src":"n9.jpg",
+				"price":"4499"
+			}
+		]
 		}
-	]
-	}
 	
 }

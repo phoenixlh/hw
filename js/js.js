@@ -32,7 +32,7 @@ function autoplay(){
 						 .fadeOut(3000)
 }
 
-
+//新闻滚动
 var num = 0; 
 var timer = setInterval(auto,2000);
 function auto(){
@@ -51,7 +51,6 @@ $(".spl").click(function(){
 	if(flag){
 		$(this).siblings("ul").animate({"margin-left":-1200},1000)
 		if( mleft == 0 ){
-//			mleft = 0;
 			flag = false;
 		}
 	}
@@ -61,6 +60,9 @@ $(".spr").click(function(){
 		$(this).siblings("ul").animate({"margin-left":0},1000);		
 	}
 })
+
+
+//ajax请求数据
 
 
 }//window的大括号

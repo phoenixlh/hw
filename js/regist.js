@@ -13,7 +13,6 @@ window.onload = function(){
 		flagPhone = true;
 	}
 })
-
 	
 	var flagName = null;
 	$("#ss2").blur(function(){
@@ -29,7 +28,6 @@ window.onload = function(){
 		}
 	})
 	
-	
 	var flagPwd = null;
 	$("#ss3").blur(function(){
 		var str = $(this).val();
@@ -43,7 +41,6 @@ window.onload = function(){
 			flagPwd = true;
 		}
 	})
-	
 	
 	var flagQpwd = null;
 	$("#ss4").blur(function(){
@@ -71,7 +68,7 @@ window.onload = function(){
 			date.setDate(date.getDate() + 7);
 			document.cookie = "userphone=" + uphone + ";expires=" + date;
 			document.cookie = "username=" + uname + ";expires=" + date;
-			document.cookie = "userpwd=" + upwd;
+			document.cookie = "userpwd=" + upwd + ";expires=" +date;
 			
 		}console.log(document.cookie)
 	})

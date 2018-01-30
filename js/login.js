@@ -23,7 +23,7 @@ window.onload = function(){
 //			}
 //		})
 $(".bt").click(function(){
-	console.log($(".n1").val());
+	console.log( $(".n1").val() );
 	
 })
 		
@@ -31,7 +31,7 @@ $(".bt").click(function(){
 	
 	
 	
-	}//window大括号
+}//window大括号
 
 
 

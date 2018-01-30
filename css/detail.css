@@ -193,6 +193,7 @@
 .t1{
 	width: 450px;
 	height: 450px;
+	border: 1px solid red;
 }
 .t2{
 	top:0;
@@ -243,29 +244,30 @@
  	width:400px;
 	height:400px;
 	border:1px solid #ccc;
+	background: #fff;
 	overflow:hidden;
 	position:absolute;
 	left:490px;
 	top:0;
 	z-index: 100;
-	display:none;
+	/*display:none;*/
 	}
-#big .bigImage{
+.bigImage{
 	position:absolute;
 	top:0;
 	left:0;
 	display: none;
 }
-	#mask{
-		width:175px;
-		height:175px;
-		/*background:#D6D6D6;*/
-		opacity:0.4;
-		position:absolute;
-		top:0;
-		left:0;
-		display:none;
-		}
+#mask{
+	width:175px;
+	height:175px;
+	background:#D6D6D6;
+	opacity:0.4;
+	position:absolute;
+	top:0;
+	left:0;
+	display: none;
+}
 .pro-right{
 	position: relative;
 	float: right;	

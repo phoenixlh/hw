@@ -79,7 +79,7 @@ body{
 	width: 328px;
     margin: 0 auto;
 }
-.n1,.n2,.n3{
+.nc1,.nc2,.nc3{
 	width: 328px;
 	height: 30px;
 	border: 0;
@@ -97,7 +97,6 @@ label{
 	height: 46px;
 	border: 0;
 	margin: 50px 0 0 37px;
-	
 }
 
 .foot{

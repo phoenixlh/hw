@@ -1,14 +1,17 @@
 window.onload = function(){
 	
 	$(".bt").click(function(){
-		//console.log( $(".n1").find("label").text() );
+		var valphone = $(".nc1").find( $(".cc1") ).text() ;
+		var valname = $(".nc2").find( $(".cc2") ).text() ;
+		var valpwd = $(".nc3").find( $(".cc3") ).text() ;
 		var pH = getCookie("userphone");
 		var uN = getCookie("username");
-//		var pS = getCookie("userpwd");
-		console.log(pH);
-//		console.log(uN);
-//		console.log(pS);
-		//userphone=13569783493; username=jusewen; userpwd=123456
+		var pS = getCookie("userpwd");
+		if( pH == valphone && uN == valname && pS == valpwd ){
+			location.href = "index.html"
+		}else{
+			alert("信息不匹配，请重新输入");
+		}
 		
 
 })

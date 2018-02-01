@@ -110,7 +110,7 @@
 		margin: 0 auto;
 		width:1200px;
 		height: 50px;
-		background:white;
+		/*background:white;*/
 	}
 	#header-con a{
 		cursor: pointer;
@@ -975,10 +975,14 @@ margin: 0 auto;
 }
 
 /*tp*/
-
+#ttp{
+	width:100%;
+	margin: 0 auto;
+	background: #F0F0F0;
+}
 #tp{
 	width:1200px;
-    background-color: #f5f5f5;
+    /*background-color: #f5f5f5;*/
     margin: 0 auto;
 }
 #tp-cc{
@@ -997,8 +1001,6 @@ margin: 0 auto;
 	line-height: 1.5;
 	border-top: 1px solid #EEEEEE;
 	font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif; 
-	background: #F0f0f0;
-	/*position: relative;*/
 }
 .ls1-con{
 	width:1200px;
